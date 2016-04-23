@@ -1,2 +1,1 @@
-# StudyNotes
-Study notes from seminars
+# 学習の記録
