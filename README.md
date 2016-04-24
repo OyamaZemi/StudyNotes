@@ -11,7 +11,7 @@ Python を使ってプログラミングができる環境を整える方法や�
 ## [Julia](./Julia)
 Julia を使ってプログラミングができる環境を整える方法や、Python を使ってコードを書く上での諸注意についての項目です。
 
-## [Quantitative Economics](./QuantitativeEconomics)
+## [Quantitative Economics](http://quant-econ.net/index.html)
 Thomas J. Sargent and John Stachurski による"Quantitative Economics"についての項目です。前半の「Python Part」では、Python を使ってプログラミングを行う基礎を取り扱っています。後半の「Economics Part」では、前半の内容を踏まえて経済学的な分析を行うための内容について取り扱っています。
 
 ## [oTree](https://github.com/ogaway/ExEcon/wiki)
