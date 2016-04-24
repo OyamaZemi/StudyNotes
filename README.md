@@ -20,13 +20,13 @@ Thomas J. Sargent and John Stachurski による"Quantitative Economics"につい
 ## [Heroku](./Heroku)
 oTreeを使う際に用いるサーバーについての項目です。
 
-## [Git/GitHub/SourceTree](./Git/GitHub/SourceTree)
+## [Git/GitHub/SourceTree](./Git:GitHub:SourceTree)
 書いたコードを保管／共有するために使う「GitHub」というサイトや、そのサイトを便利に利用するための「Source Tree」というソフトウェアに関する項目です。
 
 ## [LaTeX](./LaTeX)
 レポートや卒業論文を書く際に重宝する「LaTeX」という組版ソフト（美しい体裁の文章ファイルを作成してくれるソフト）についての項目です。
 
-## [Think Stats/Think Bayes](./Think Stats/Think Bayes)
+## [Think Stats/Think Bayes](./Think Stats:Think Bayes)
 Allen B. Downey によるThink Stats/Think Bayesに関する項目です。 「プログラミングのスキルを統計の理解に役立てよう」というコンセプトで書かれており、統計の基礎について、実際にPythonのコードを示し、実データを分析しながら解説しています。
 
 ## [リンク集]
