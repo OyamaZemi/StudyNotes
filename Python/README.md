@@ -39,7 +39,7 @@ Pythonにはたくさんのディストリビューション（方言のよう�
 
 上記のインストーラを使っても良いですが, pyenvというバージョン管理ツールが便利です. 経済学部のPCにもこれがインストールされています.
 
-[pyenvの使い方](blob/master/Python/pyenv.md)
+[pyenvの使い方](/pyenv.md)
 
 ## Pythonコードの実行方法
 
