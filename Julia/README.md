@@ -1,5 +1,11 @@
 # Julia
 
+## Style Guidelines
+
+* [QuantEcon.jl](https://github.com/QuantEcon/QuantEcon.jl/blob/sl/styleguide/docs/style_guide.md)
+* [johnmyleswhite/Style.jl](https://github.com/johnmyleswhite/Style.jl)
+
+
 ## Performance Tips
 
 * [Performance Tips](http://docs.julialang.org/en/release-0.4/manual/performance-tips/)
