@@ -1,6 +1,11 @@
-# read
+# Julia
+
+## トラブルシューティング
+
 Ijulia インストール時の失敗談
 Pkg.add("IJulia")でIjuliaをインストールしようとしたところ、以下のエラーがでました。
+
+```julia
 julia> Pkg.add("IJulia")
 INFO: Initializing package repository /home/9720514486/.julia/v0.4
 INFO: Cloning METADATA from git://github.com/JuliaLang/METADATA.jl
@@ -10,6 +15,7 @@ in checkfor_mv_cp_cptree at file.jl:90
 in init at pkg/dir.jl:63
 in cd at pkg/dir.jl:28
 in add at pkg.jl:23
+```
 
 これに対する対処法は、 '/home/9720514486/.julia/v0.4/REQUIRE' を消せということだったので、
 ホームデュレクトリ直下にあった.juliaをターミナルで、　rm -rf .julia　と打ち込んで消して
