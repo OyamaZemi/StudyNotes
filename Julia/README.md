@@ -1,5 +1,12 @@
 # Julia
 
+## Performance Tips
+
+* [Performance Tips](http://docs.julialang.org/en/release-0.4/manual/performance-tips/)
+* [Writing Fast Code](http://quant-econ.net/jl/types_methods.html#writing-fast-code)
+* [Juliaチューニングハンズオン](https://gist.github.com/bicycle1885/626f59ff9e0375573470)
+
+
 ## トラブルシューティング
 
 Ijulia インストール時の失敗談
