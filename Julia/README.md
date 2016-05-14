@@ -12,6 +12,10 @@
 * [Writing Fast Code](http://quant-econ.net/jl/types_methods.html#writing-fast-code)
 * [Juliaチューニングハンズオン](https://gist.github.com/bicycle1885/626f59ff9e0375573470)
 
+## Package Management
+### [Package Clone]
+Quant Econ等に記載されているコードはまだpublishされていないバージョンのパッケージを用いている場合があります。その場合は'Pkg.add(パッケージ名)'ではなく'Pkg.clone(パッケージが置いてあるgihubのURL)'でパッケージを追加する必要があります。
+
 
 ## トラブルシューティング
 
