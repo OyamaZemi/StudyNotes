@@ -13,8 +13,8 @@
 * [Juliaチューニングハンズオン](https://gist.github.com/bicycle1885/626f59ff9e0375573470)
 
 ## Package Management
-### Install Unpublished Packages
-Quant Econ等ではpublishされていないパッケージを用いている場合があります。その際には'Pkg.add(パッケージ名)'ではなく'Pkg.clone(パッケージが置いてあるgithubのURL)'を使ってパッケージをインストールしましょう。
+### 開発版パッケージのインストール
+Quant Econ等ではpublishされていないパッケージを用いている場合があります。その際には`Pkg.add("パッケージ名")`ではなく`Pkg.clone("パッケージが置いてあるgithubのURL")`を使ってパッケージをインストールしましょう。
 
 
 ## トラブルシューティング
