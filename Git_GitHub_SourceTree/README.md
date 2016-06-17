@@ -1,3 +1,18 @@
+# GitHub
+## Personalアカウント
+Personalアカウントではプライベートレポジトリを作成できます.
+本来月7$かかるPersonalアカウントが学生なら実質無料で使えます. 2016年5月以降プライベートレポジトリが無制限に作成できるようになったのでお得です.
+
+### 作成方法
+1. [GitHub Education](https://education.github.com/)にアクセスして, Request a discountをクリックし,必要な情報を入力します.　メールアドレス入力フォームには```~.ac.jp```で終わる大学のメールアドレスを入力するようにしてください. (メールアドレスを忘れた人は[MailSuite](https://ms.ecc.u-tokyo.ac.jp/cgi-bin/index.cgi)にログインすることで確認することができます)
+
+1. 数日後にメールが届きます. acceptされた場合すでにPersonalアカウントが使用可能になっているはずです.
+
+### 参考
+[無料でGitHubのプライベートリポジトリを使う方法（$7 Microプラン）【学生限定】](http://www.mocchiblog.com/?p=10516)
+
+[GitHub、有料プランの料金体系を変更、個人は月額7ドルプランのみ、組織利用はユーザー単位での課金に変更](https://codezine.jp/article/detail/9434)
+
 # Source Tree
 ## リベースの仕方
 ### リベースとは
