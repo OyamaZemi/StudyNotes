@@ -31,6 +31,9 @@ oTreeを使う際に用いるサーバーについての項目です。
 ## [Think Stats/Think Bayes](ThinkStats_ThinkBayes)
 Allen B. Downey によるThink Stats/Think Bayesに関する項目です。 「プログラミングのスキルを統計の理解に役立てよう」というコンセプトで書かれており、統計の基礎について、実際にPythonのコードを示し、実データを分析しながら解説しています。
 
+## [オープンソースライセンスについて](OpenSourceLicense)
+他人のデータ・プログラムなどを使用する際に気をつけるべきライセンスについての項目です.
+
 ## リンク集
 
 
