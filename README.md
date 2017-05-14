@@ -10,6 +10,8 @@ Python を使ってプログラミングができる環境を整える方法や�
 
 ## [Julia](Julia)
 Julia を使ってプログラミングができる環境を整える方法や、Python を使ってコードを書く上での諸注意についての項目です。
+### [Unpublished package install]
+Quant Econ等のコードではまだpublishされていないバージョンのパッケージを用いている場合があります。その際には'Pkg.add(パッケージ名)'ではなく'Pkg.clone(パッケージが置いてあるgihubのURL)'でパッケージの追加を行いましょう。
 
 ## [Quantitative Economics](QuantEcon)
 Thomas J. Sargent and John Stachurski による
