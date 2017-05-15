@@ -35,7 +35,7 @@ Githubに新しいコミットをプッシュしても,
 
 [nbviewer faq](http://nbviewer.jupyter.org/faq#i-want-to-removeupdate-a-notebook-from-notebook-viewer)
 
-### Jupyter Notebook上でグラフが表示されない
+### ローカルのJupyter Notebook上でグラフが表示されない
 
 Jupyter Notebook上で以下のようなコードを実行してもグラフが表示されないことがあります。
 ```
