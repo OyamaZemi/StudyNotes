@@ -11,6 +11,9 @@ Python を使ってプログラミングができる環境を整える方法や�
 ## [Julia](Julia)
 Julia を使ってプログラミングができる環境を整える方法や、Python を使ってコードを書く上での諸注意についての項目です。
 
+## [Jupyter](JupyterNotebook)
+GUIによるインタラクティブなプログラミングができるJupyterについての項目です.
+
 ## [Quantitative Economics](QuantEcon)
 Thomas J. Sargent and John Stachurski による
 "[Quantitative Economics](http://quant-econ.net)"
