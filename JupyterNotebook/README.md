@@ -43,13 +43,13 @@ nbviewer上でPlotsライブラリのplotlyjsバックエンドを用いてプ�
 <h4 id="cause">原因</h4>
 
 1.
-```
+```julia
 using Plots
 plotlyjs()
 ```
 とした際にplotlyjsのロードに失敗している.
 
-1. plotlyjsを一度ロードした後に, ロードしたセルを消してしまっている.
+2. plotlyjsを一度ロードした後に, ロードしたセルを消してしまっている.
 
 のどちらか(たぶん後者)だと考えられます.
 
@@ -60,15 +60,15 @@ plotlyjs()
 <h4 id="solution">解決策</h4>
 
 1. 一度Notebookをシャットダウンしてもう一度開き, どこかのセルで`plotlyjs()`を呼ぶ. (何処かのセルで読み込んでいれば良いようです.)
-```
+```julia
 using Plots
 plotlyjs()
 ```
 これをプッシュすればnbviewerで再び図が表示されるはずです.
 
-1. シャットダウンしたくない場合には, PlotlyJSライブラリの`init_notebook()`関数を呼ぶ.
-`init_notebook()`関数は引数が強制的にplotlyjsを読み込むか否かのオプションなので, 以下のようにします.
-```
+2. シャットダウンしたくない場合には, PlotlyJSライブラリの`init_notebook()`関数を呼ぶ.
+`init_notebook()`関数はplotlyを読み込む関数で, 引数が強制的にplotlyjsを読み込むかのオプションなので, 以下のようにします.
+```julia
 using PlotlyJS.init_notebook
 init_notebook(true)
 ```
@@ -80,4 +80,5 @@ Jupyter Notebook上でPlotsライブラリのplotlyjsバックエンドによる
 
 原因は[上記](#cause)と同じです.
 
-解決策は[上記](#solution)一番目の方法を取ったあとにNotebookをシャットダウンしてもう一度開くことです.(Jupyter Notebookを終了する必要はありません.)
+解決策は[上記](#solution)一番目の方法を取ったあとにNotebookをシャットダウンしてもう一度開くことです.
+(Jupyter Notebookを終了する必要はありません.)
