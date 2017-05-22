@@ -42,7 +42,8 @@ nbviewer上でPlotsライブラリのplotlyjsバックエンドを用いてプ�
 
 <h4 id="cause">原因</h4>
 
-1. ```
+1.
+```
 using Plots
 plotlyjs()
 ```
