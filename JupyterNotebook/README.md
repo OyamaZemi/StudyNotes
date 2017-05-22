@@ -20,7 +20,7 @@
 
 ### nbviewerで更新が反映されない.
 
-Githubに新しいコミットをプッシュしても, 
+Githubに新しいコミットをプッシュしても,
 [nbviewer](http://nbviewer.jupyter.org/)で更新がすぐに反映されない場合があります.
 
 原因は, 一度nbviewerにurlを渡した際にnbviewer側でキャッシュが作られてしまうことです. 10分ほどで更新が反映されるようですが, すぐに反映したい場合には以下の方法が有効です.
@@ -35,23 +35,48 @@ Githubに新しいコミットをプッシュしても,
 
 [nbviewer faq](http://nbviewer.jupyter.org/faq#i-want-to-removeupdate-a-notebook-from-notebook-viewer)
 
-### ローカルのJupyter Notebook上でグラフが表示されない
+### nbviewer上でグラフが表示されない
 
-Jupyter Notebook上で以下のようなコードを実行してもグラフが表示されないことがあります。
+nbviewer上でPlotsライブラリのplotlyjsバックエンドを用いてプロットした図が表示されないことがあります.
+(Github上で表示されないのは仕様です.)
+
+<h4 id="cause">原因</h4>
+
+1. ```
+using Plots
+plotlyjs()
+```
+とした際にplotlyjsのロードに失敗している.
+
+1. plotlyjsを一度ロードした後に, ロードしたセルを消してしまっている.
+
+のどちらか(たぶん後者)だと考えられます.
+
+`plotlyjs()`関数は, plotlyjsのスクリプトをセルに埋め込む関数で, そのセルがないと`plot()`を呼び出したInセルに続くOutセル内のスクリプトが内部でエラーを起こしてしまいます.
+
+また,`plotlyjs()`関数は内部で既に自らが呼ばれているか判断するようです. Runnning中にまた`plotlyjs()`が呼ばれた場合,再びplotlyjsを読み込むことはありません. つまり, Running中にはじめに読み込んだ`plotlyjs()`を含むセルを削除して, また別のセルで`plotlyjs()`と書いて実行しても, 正常にplotlyjsの読み込みができません. セルを削除した直後にプロットをしても表示されますが, Notebookを終了して再び開くとplotlyjsのスクリプトが保存されていないために図が表示されなくなります. また, この状態のNotebookをアップロードしてもnbviewerでは図が表示されません.
+
+<h4 id="solution">解決策</h4>
+
+1. 一度Notebookをシャットダウンしてもう一度開き, どこかのセルで`plotlyjs()`を呼ぶ. (何処かのセルで読み込んでいれば良いようです.)
 ```
 using Plots
-
 plotlyjs()
+```
+これをプッシュすればnbviewerで再び図が表示されるはずです.
 
-plot(collect(1:10))
-```	
+1. シャットダウンしたくない場合には, PlotlyJSライブラリの`init_notebook()`関数を呼ぶ.
+`init_notebook()`関数は引数が強制的にplotlyjsを読み込むか否かのオプションなので, 以下のようにします.
+```
+using PlotlyJS.init_notebook
+init_notebook(true)
+```
+その後表示したい図を再読込してください.
 
-これに対する対処法として, 
-1. 一旦Jupyterを終了.
-1. Macの場合 `~/.julia/使用しているJuliaのバージョン/IJulia`を削除.
-`rm ~/.julia/v0.5/IJulia`
-念のため `rm ~/.julia/v0.5/Plots` もしておくと良いかもしれません.
-1. Juliaを開き先程削除したIJulia, PlotsをPkg.add()によりインストールします.
+### ローカルのJupyter Notebook上でグラフが表示されない
 
-この後再びJupyterを起動して試してみると治っている場合があります.
+Jupyter Notebook上でPlotsライブラリのplotlyjsバックエンドによるプロットが表示されないことがあります.
 
+原因は[上記](#cause)と同じです.
+
+解決策は[上記](#solution)一番目の方法を取ったあとにNotebookをシャットダウンしてもう一度開くことです.(Jupyter Notebookを終了する必要はありません.)
