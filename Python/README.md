@@ -7,6 +7,7 @@
 
 1. [はじめに](#はじめに)
 1. [Pythonのインストール方法](#Pythonのインストール方法)
+1. [Anaconda のアップデート](#Anaconda のアップデート)
 1. [Pythonコードの実行方法](#Pythonコードの実行方法)
 1. [ライブラリをインストールする](#ライブラリをインストールする(pip))
 1. [コーディング規約](#コーディング規約)
@@ -40,6 +41,46 @@ Pythonにはたくさんのディストリビューション（方言のよう�
 上記のインストーラを使っても良いですが, pyenvというバージョン管理ツールが便利です. 経済学部のPCにもこれがインストールされています.
 
 [pyenvの使い方](/Python/pyenv.md)
+
+## Anaconda のアップデート
+
+Anaconda に入っているパッケージ類は随時アップデートされているようなので，Anaconda 環境全体を時々アップデートしましょう．
+* [Package Management - quant-econ](https://lectures.quantecon.org/py/getting_started.html#package-management)
+* [Anaconda changelog](https://docs.continuum.io/anaconda/changelog)
+
+### アップデートの実行例
+
+#### Mac
+
+ターミナルを開いて，まず
+```
+conda update conda
+```
+
+と打って conda (Anconda のパッケージ管理コマンド) じたいをアップデートする．
+いろいろ表示されたあと
+
+```
+Proceed ([y]/n)?
+```
+
+と聞かれるので，そのままリターンを押す．
+
+次に
+
+```
+conda update anaconda
+```
+
+と打つ．同様に
+
+```
+Proceed ([y]/n)?
+```
+
+と聞かれたらリターンを押す．
+無事終了したらいろいろ最新版になっている．
+
 
 ## Pythonコードの実行方法
 
