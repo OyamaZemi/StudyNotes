@@ -15,8 +15,10 @@
 ## Performance Tips
 
 * [Performance Tips](http://docs.julialang.org/en/stable/manual/performance-tips/)
-* [Writing Fast Code](http://quant-econ.net/jl/types_methods.html#writing-fast-code)
+* [The Need for Speed](https://lectures.quantecon.org/jl/need_for_speed.html)
 * [Juliaチューニングハンズオン](https://gist.github.com/bicycle1885/626f59ff9e0375573470)
+* [コードの高速化](http://nbviewer.jupyter.org/github/IoriS/MyMatching.jl/blob/master/課題5.ipynb) (@IoriS)
+
 
 ## Package Management
 ### 開発版パッケージのインストール
