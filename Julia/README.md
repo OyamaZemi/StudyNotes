@@ -1,5 +1,11 @@
 # Julia
 
+## Tutorials
+
+* [Julia高速チュートリアル](https://github.com/bicycle1885/Julia-Tutorial)
+* [最新Juliaチュートリアル](http://nbviewer.jupyter.org/github/bicycle1885/JuliaTokyo7/blob/master/最新Juliaチュートリアル.ipynb)
+
+
 ## Style Guidelines
 
 * [QuantEcon.jl](https://github.com/QuantEcon/QuantEcon.jl/blob/sl/styleguide/docs/style_guide.md)
