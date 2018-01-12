@@ -62,6 +62,6 @@ Pkg.clone("https://github.com/QuantEcon/QuantEcon.jl/")
 なお、これでもうまくいいかない場合は、以下のようにします。
 ```julia
 Pkg.rm("QuantEcon")
-Pkg.rm("QuantEcon") # 二回実行します
+Pkg.rm("QuantEcon") # 二回実行します。このとき、Package QuantEcon is not installedと表示されれば大丈夫です。
 Pkg.clone("https://github.com/QuantEcon/QuantEcon.jl/")
 ```
