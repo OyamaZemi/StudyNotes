@@ -56,6 +56,12 @@ Pkg.rm("Julia")と打ち込み
 リリース版ではなく、最新版の機能が必要である場合、`Pkg.add`ではなく`Pkg.clone`を使う必要があります。具体的には、以下のようにします。
 ```julia
 Pkg.rm("QuantEcon")
+Pkg.clone("https://github.com/QuantEcon/QuantEcon.jl/")
+```
+
+なお、これでもうまくいいかない場合は、以下のようにします。
+```julia
+Pkg.rm("QuantEcon")
 Pkg.rm("QuantEcon") # 二回実行します
-Pkg.clone(URL) # URLにはQuantEconリポジトリへのパスを入れてください
+Pkg.clone("https://github.com/QuantEcon/QuantEcon.jl/")
 ```
