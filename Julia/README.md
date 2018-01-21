@@ -18,6 +18,7 @@
 * [The Need for Speed](https://lectures.quantecon.org/jl/need_for_speed.html)
 * [Juliaチューニングハンズオン](https://gist.github.com/bicycle1885/626f59ff9e0375573470)
 * [コードの高速化](http://nbviewer.jupyter.org/github/IoriS/MyMatching.jl/blob/master/課題5.ipynb) (@IoriS)
+* [Fast array slicing in Julia](http://ssfrr.com/2017/11/03/julia_fast_array_slicing/)
 
 
 ## Package Management
