@@ -27,13 +27,13 @@ Pythonは「ニシキヘビ」の意味ですが, 名前の由来は[空飛ぶ�
 
 Pythonにはたくさんのディストリビューション（方言のようなもの）が存在し, 様々なダウンロード/インストール方法があります.
 
-また **Python2**, **Python3** という大きなバージョンの違いがあり, この2つの間には互換性がありません. **Python3の方が新しく, ゼミでは主に3系を使います**が, 未だPython3に対応していないライブラリもあるので注意が必要です.
+かつて **Python2** と **Python3** という大きなバージョンの違いがありましたが, Python2は2020年1月にサポートが終了しました. **現在はPython3系のみを使用します**. 2025年現在の最新バージョンはPython 3.13系です.
 
 [公式サイト](http://www.python.jp/)からもダウンロードできますが, ここでは[Anaconda](https://www.continuum.io/why-anaconda)という, 科学計算用のライブラリが最初から入っているディストリビューションを紹介します.
 
 #### Windows OSの場合
 
-[Anacondaのインストーラ](https://www.continuum.io/downloads)をダウンロードして使うのが良いと思います. Python3.5系を選択してください.
+[Anacondaのインストーラ](https://www.anaconda.com/download)をダウンロードして使うのが良いと思います. 最新のPython3系（3.11以降）を選択してください.
 
 
 #### Mac OS XまたはLinuxの場合
@@ -97,8 +97,8 @@ python
 と入力します. すると
 
 ```
-Python 3.4.3 |Anaconda 2.3.0 (x86_64)| (default, Mar  6 2015, 12:07:41) 
-[GCC 4.2.1 (Apple Inc. build 5577)] on darwin
+Python 3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:29:18) 
+[GCC 11.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
@@ -193,7 +193,7 @@ Pythonを使ってコードを書く際には、「こういう風に書きま�
 
 などがあります。詳しくは下記のリンクから確認してください。
 
-[PEP8](http://legacy.python.org/dev/peps/pep-0008/)
+[PEP8](https://peps.python.org/pep-0008/)
 [PEP8 オンラインチェッカー](http://pep8online.com/)
 
 幸いなことに, 多くのエディタには自動でPEP8に従うようコードを整形してくれるアドインがあります. flake8といった, コーディング規約に従っているかをチェックするPythonのライブラリも存在します.
