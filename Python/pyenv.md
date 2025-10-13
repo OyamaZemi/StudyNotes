@@ -2,7 +2,7 @@
 
 Pythonのバージョン管理ツール, pyenvの説明.
 
-公式Github: [yyuu/pyenv](https://github.com/yyuu/pyenv)
+公式Github: [pyenv/pyenv](https://github.com/pyenv/pyenv)
 
 **目次**
 
@@ -15,10 +15,10 @@ Pythonのバージョン管理ツール, pyenvの説明.
 ## pyenvとは
 1台のPCの中で, 異なるバージョンのPythonを使い分けるためのツールです.
 
-一口にPythonと言っても様々なディストリビューションがあり, Python2/Python3という大きなバージョンの違いだけでなく, 科学計算用の様々なモジュールが最初から揃っているAnacondaやWinPythonといったものもあります. またそれぞれに
+一口にPythonと言っても様々なディストリビューションがあり, 科学計算用の様々なモジュールが最初から揃っているAnacondaといったものがあります. またそれぞれに
 
 ```
-2.7.3/2.7.4/3.4.3/3.4.4/anaconda3-2.3.0/anaconda3-2.4.0
+3.10.13/3.11.8/3.12.2/3.13.0/anaconda3-2024.02-1
 ```
 
 というような複数のマイナーバージョンが存在し, 異なるPythonを使い分けたくなることがしばしばあります. そのような場面で複数のPythonを簡単に切り替えられるようにするツールがpyenvです.
@@ -51,7 +51,7 @@ which python
 
 他のPCにインストールしたい場合は
 
-* Github: [yyuu/pyenv](https://github.com/yyuu/pyenv)
+* Github: [pyenv/pyenv](https://github.com/pyenv/pyenv)
 
 に全てが書いてあります. なおMacでHomebrewがインストールされていれば
 
@@ -69,7 +69,7 @@ pyenv
 というコマンドを実行し, 
 
 ```
-pyenv 20150326
+pyenv 2.3.36
 Usage: pyenv <command> [<args>]
 
 Some useful pyenv commands are:
@@ -86,7 +86,7 @@ Some useful pyenv commands are:
    whence      List all Python versions that contain the given executable
 
 See 'pyenv help <command>' for information on a specific command.
-For full documentation, see: https://github.com/yyuu/pyenv#readme
+For full documentation, see: https://github.com/pyenv/pyenv#readme
 ```
 
 というようなヘルプが表示されれば, インストール成功です. もし
@@ -141,12 +141,12 @@ pyenv local [バージョン名]    #現在のディレクトリに設定され�
 pyenv global [バージョン名]   #PC全体で標準のpythonのバージョンを設定
 ```
 
-とりあえずanaconda3の最新バージョン（2016/4/24現在: `anaconda3-2.4.0`）をインストールするのが良いと思います. そのためには, 
+とりあえずanaconda3の最新バージョン（2025年現在の最新版を確認してください）をインストールするのが良いと思います. そのためには, 
 
 ```
 pyenv install --list  #インストール可能なバージョンを確認
-pyenv install anaconda3-2.4.0  #最新バージョンのanacondaをインストール
-pyenv global anaconda3-2.4.0  #anacondaを標準のpythonに設定
+pyenv install anaconda3-2024.02-1  #最新バージョンのanacondaをインストール（最新版を確認）
+pyenv global anaconda3-2024.02-1  #anacondaを標準のpythonに設定
 ```
 
 とすればよいです. なお, 大学のPCには既にanaconda3がインストールされています.

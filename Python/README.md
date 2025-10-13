@@ -1,7 +1,7 @@
 # Python
 プログラミング言語Pythonの使い方について解説します. Python3.x系がメインです.
 
-[日本語版公式サイト](http://www.python.jp/)
+[日本語版公式サイト](https://www.python.jp/)
 
 **目次**
 
@@ -16,9 +16,9 @@
 
 ## はじめに
 
-Pythonはフリー・マルチプラットフォーム・オープンソースな動的な型付けの汎用プログラミング言語です. シンプルでわかりやすい文法を持ち, Webサーバから統計処理まで様々な用途に使用することが出来ます. 非常にメジャーな言語で, [Tiobe Index](http://www.tiobe.com/tiobe_index)というプログラミング言語の人気調査を見ると, JavaやC系の言語に次ぐ人気を獲得しています. GoogleやFacebookといった企業が採用していることもあり, 近年日本でも利用者が増えています.
+Pythonはフリー・マルチプラットフォーム・オープンソースな動的な型付けの汎用プログラミング言語です. シンプルでわかりやすい文法を持ち, Webサーバから統計処理まで様々な用途に使用することが出来ます. 非常にメジャーな言語で, [TIOBE Index](https://www.tiobe.com/tiobe-index/)というプログラミング言語の人気調査を見ると, 近年では常にトップ3にランクインする人気言語となっています. GoogleやMeta（旧Facebook）, Netflixといった企業が採用していることもあり, AI/機械学習分野でも広く使われています.
 
-* [Tiobe Index](http://www.tiobe.com/tiobe_index)
+* [TIOBE Index](https://www.tiobe.com/tiobe-index/)
 * [Python - Wikipedia](https://ja.wikipedia.org/wiki/Python)
 
 Pythonは「ニシキヘビ」の意味ですが, 名前の由来は[空飛ぶモンティ・パイソン](https://ja.wikipedia.org/wiki/%E7%A9%BA%E9%A3%9B%E3%81%B6%E3%83%A2%E3%83%B3%E3%83%86%E3%82%A3%E3%83%BB%E3%83%91%E3%82%A4%E3%82%BD%E3%83%B3)だそうです.
@@ -27,13 +27,13 @@ Pythonは「ニシキヘビ」の意味ですが, 名前の由来は[空飛ぶ�
 
 Pythonにはたくさんのディストリビューション（方言のようなもの）が存在し, 様々なダウンロード/インストール方法があります.
 
-また **Python2**, **Python3** という大きなバージョンの違いがあり, この2つの間には互換性がありません. **Python3の方が新しく, ゼミでは主に3系を使います**が, 未だPython3に対応していないライブラリもあるので注意が必要です.
+2025年現在の最新バージョンはPython 3.13系です.
 
-[公式サイト](http://www.python.jp/)からもダウンロードできますが, ここでは[Anaconda](https://www.continuum.io/why-anaconda)という, 科学計算用のライブラリが最初から入っているディストリビューションを紹介します.
+[公式サイト](https://www.python.jp/)からもダウンロードできますが, ここでは[Anaconda](https://www.anaconda.com/)という, 科学計算用のライブラリが最初から入っているディストリビューションを紹介します.
 
 #### Windows OSの場合
 
-[Anacondaのインストーラ](https://www.continuum.io/downloads)をダウンロードして使うのが良いと思います. Python3.5系を選択してください.
+[Anacondaのインストーラ](https://www.anaconda.com/download)をダウンロードして使うのが良いと思います. 最新のPython3系（3.11以降）を選択してください.
 
 
 #### Mac OS XまたはLinuxの場合
@@ -46,7 +46,7 @@ Pythonにはたくさんのディストリビューション（方言のよう�
 
 Anaconda に入っているパッケージ類は随時アップデートされているようなので，Anaconda 環境全体を時々アップデートしましょう．
 * [Package Management - quant-econ](https://lectures.quantecon.org/py/getting_started.html#package-management)
-* [Anaconda changelog](https://docs.continuum.io/anaconda/changelog)
+* [Anaconda リリースノート](https://docs.anaconda.com/free/anaconda/release-notes/)
 
 ### アップデートの実行例
 
@@ -97,8 +97,8 @@ python
 と入力します. すると
 
 ```
-Python 3.4.3 |Anaconda 2.3.0 (x86_64)| (default, Mar  6 2015, 12:07:41) 
-[GCC 4.2.1 (Apple Inc. build 5577)] on darwin
+Python 3.13.0 | packaged by Anaconda, Inc. | (main, Oct  7 2024, 16:20:14) 
+[GCC 11.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
@@ -150,13 +150,13 @@ Hello World!
 
 とターミナルが返してくれます.
 
-#### 3. IPython Notebook(Jupyter Notebook)上でPythonを動かす
+#### 3. Jupyter Notebook上でPythonを動かす
 
-(Jupyter)[http://jupyter.org/]
+[Jupyter](https://jupyter.org/)
 
-Jupyter Notebook（旧名IPython Notebook）は, PythonやR, Julia, Scalaなどのプログラミング言語に対応した, 文章や図, 数式とコードを1つのNotebookにまとめることのできるツールです.
+Jupyter Notebook（旧名IPython Notebook）は, PythonやR, Julia, Scalaなどのプログラミング言語に対応した, 文章や図, 数式とコードを1つのNotebookにまとめることのできるツールです. 2024年以降はJupyterLabという次世代インターフェースも広く使われています.
 
-百聞は一見にしかず: [KMRのシミュレーション](http://nbviewer.jupyter.org/github/myuuuuun/KMR/blob/master/KMR.ipynb)
+百聞は一見にしかず: [KMRのシミュレーション](https://nbviewer.jupyter.org/github/myuuuuun/KMR/blob/master/KMR.ipynb)
 
 Anaconda環境には最初から入っています. その他の環境の場合は
 
@@ -193,7 +193,7 @@ Pythonを使ってコードを書く際には、「こういう風に書きま�
 
 などがあります。詳しくは下記のリンクから確認してください。
 
-[PEP8](http://legacy.python.org/dev/peps/pep-0008/)
+[PEP8](https://peps.python.org/pep-0008/)
 [PEP8 オンラインチェッカー](http://pep8online.com/)
 
 幸いなことに, 多くのエディタには自動でPEP8に従うようコードを整形してくれるアドインがあります. flake8といった, コーディング規約に従っているかをチェックするPythonのライブラリも存在します.
