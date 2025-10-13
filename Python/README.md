@@ -97,7 +97,7 @@ python
 と入力します. すると
 
 ```
-Python 3.12.0 | packaged by Anaconda, Inc. | (main, Oct  2 2023, 17:29:18) 
+Python 3.13.0 | packaged by Anaconda, Inc. | (main, Oct  7 2024, 16:20:14) 
 [GCC 11.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
