@@ -3,7 +3,7 @@
 ## Tutorials
 
 * [Julia高速チュートリアル](https://github.com/bicycle1885/Julia-Tutorial)
-* [最新Juliaチュートリアル](http://nbviewer.jupyter.org/github/bicycle1885/JuliaTokyo7/blob/master/最新Juliaチュートリアル.ipynb)
+* [最新Juliaチュートリアル](https://nbviewer.org/github/bicycle1885/JuliaTokyo7/blob/master/最新Juliaチュートリアル.ipynb)
 
 
 ## Style Guidelines
@@ -14,11 +14,9 @@
 
 ## Performance Tips
 
-* [Performance Tips](http://docs.julialang.org/en/stable/manual/performance-tips/)
-* [The Need for Speed](https://lectures.quantecon.org/jl/need_for_speed.html)
-* [Juliaチューニングハンズオン](https://gist.github.com/bicycle1885/626f59ff9e0375573470)
-* [コードの高速化](http://nbviewer.jupyter.org/github/IoriS/MyMatching.jl/blob/master/課題5.ipynb) (@IoriS)
-* [Fast array slicing in Julia](http://ssfrr.com/2017/11/03/julia_fast_array_slicing/)
+* [Performance Tips](https://docs.julialang.org/en/v1/manual/performance-tips/)
+* [The Need for Speed](https://julia.quantecon.org/getting_started_julia/need_for_speed.html)
+* [コードの高速化](https://nbviewer.org/github/IoriS/MyMatching.jl/blob/master/課題5.ipynb) (@IoriS)
 
 
 ## Package Management
